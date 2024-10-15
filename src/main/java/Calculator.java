@@ -1,6 +1,6 @@
 
 class Calculator {
-    //adding stuff
+    //adding stuff and
     Calculator(){
 
     }
