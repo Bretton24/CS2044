@@ -1,8 +1,9 @@
 import java.util.Scanner;
-import Calculator.java;
+
 public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+    Calculator calculator = new Calculator(); // Create an instance of Calculator
 
     while (scanner.hasNextLine()) {
       String input = scanner.nextLine();
@@ -23,22 +24,22 @@ public class Main {
 
       switch (command) {
         case "add":
-          System.out.println(add(num1, num2));
+          System.out.println(calculator.add(num1, num2));
           break;
         case "subtract":
-          System.out.println(subtract(num1, num2));
+          System.out.println(calculator.subtract(num1, num2));
           break;
         case "multiply":
-          System.out.println(multiply(num1, num2));
+          System.out.println(calculator.multiply(num1, num2));
           break;
         case "divide":
-          System.out.println(divide(num1, num2));
+          System.out.println(calculator.divide(num1, num2));
           break;
         case "fibonacci":
-          System.out.println(fibonacciNumberFinder(num1));
+          System.out.println(calculator.fibonacciNumberFinder(num1));
           break;
         case "binary":
-          System.out.println(intToBinaryNumber(num1));
+          System.out.println(calculator.intToBinaryNumber(num1));
           break;
         default:
           System.out.println("Unknown command: " + command);
