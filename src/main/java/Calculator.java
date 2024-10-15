@@ -37,8 +37,20 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n){
-        return 0;
+    int fibonacciNumberFinder(int n) {
+        if (n <= 0) {
+            return 0; // Typically 0 is returned for non-positive n.
+        } else if (n == 1 || n == 2) {
+            return 1; // The first two numbers are 1.
+        }
+
+        int a = 1, b = 1;
+        for (int i = 3; i <= n; i++) {
+            int next = a + b; // Calculate the next Fibonacci number.
+            a = b;  // Move forward in the sequence.
+            b = next;
+        }
+        return b; // The nth Fibonacci number.
     }
 
 
