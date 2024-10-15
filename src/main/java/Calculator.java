@@ -65,6 +65,7 @@ class Calculator {
         return Integer.toBinaryString(number);
     }
 
+    import java.util.UUID;
     /*
     Create a completely unique String identifier for a given string
     Each createdID must contain the string n in its unaltered Form
@@ -74,7 +75,8 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
-        return null;
+        String uniqueID = n + UUID.randomUUID().toString();
+        return uniqueID;
     }
 
 
