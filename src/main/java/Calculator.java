@@ -2,7 +2,7 @@
 import java.util.UUID;
 
 class Calculator {
-    //adding stuff and this
+    //adding stuff
     Calculator(){
 
     }
