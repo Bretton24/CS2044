@@ -1,4 +1,6 @@
 
+import java.util.UUID;
+
 class Calculator {
     //adding stuff and
     Calculator(){
@@ -65,7 +67,7 @@ class Calculator {
         return Integer.toBinaryString(number);
     }
 
-    import java.util.UUID;
+
     /*
     Create a completely unique String identifier for a given string
     Each createdID must contain the string n in its unaltered Form
